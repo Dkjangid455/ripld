@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+    <title>REMINE INDIA PRIVATE LIMITED</title>
+    <link rel="icon" type="image/x-icon" href="./favico2.ico">
+</head>
+<header >
+    <div class="navbar">
+        <div class="logo"><a href=""><img src="./recycling.png" alt="" width="60px" height="60px"></a></div>
+        <ul class="links">
+            <li> <a href="home">Home</a></li>
+            <li> <a href="about">About</a></li>
+            <li> <a href="service">Service</a></li>
+            <li> <a href="contect"> Achievements</a></li>
+        </ul>
+        <a href="#" class="action_btn">Contact Us </a>
+        <div class="toggle_btn"><i class="fa-solid fa-bars"></i></div>
+       
+    </div>
+    <div class="dropdown_menu ">
+        <li> <a  href="home" >Home</a></li>
+        <li> <a href="about">About</a></li>
+        <li> <a href="service">Service</a></li>
+        <li> <a href="contect">Achievements</a></li>
+        <li> <a href="#" class="action_btn">Contact Us</a></li>
+    </div>
+</header>
+<main>
+    <section id="hero">
+    <h1>    WELCOME To REMINE INDIA PRIVATE LIMITED</h1>
+    <p>REMINE INDIA PRIVATE LIMITED is a company <br>
+        registered in India having its registered office at WARD NO. 3, <br>
+        SUPRIYA COLONY, SITARGANJ SITARGANJ Udham Singh Nagar UR 262405 IN. 
+        <br> The company was registered on 06-12-2022 with Registrar of Companies 
+        <br> RoC-Uttarakhand as a Private Company limited by Shares.  </p>
+        </section>
+</main>
+<footer class="footer">
+    <div class="container">
+        <div class="row">
+            <div class="footer-col">
+                <h4>company</h4>
+                <ul>
+                    <li><a href="#">Terms and Conditions</a></li>
+                    <li><a href="#">our services</a></li>
+                    <li><a href="#">privacy policy</a></li>
+                   
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>About Us</h4>
+                <ul>
+                    <li><a href="#">FAQ</a></li>
+                    <li><a href="#">Certifications and partnerships</a></li>
+                   
+                    <li><a href="#">Mission and values</a></li>
+                   
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Other</h4>
+                <ul>
+                    <li><a href="#">our organization</a></li>
+                    <li><a href="#">employs</a></li>
+                    <li><a href="#">list of city</a></li>
+                  
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>follow us</h4>
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<script>
+
+ const toggleBtn =document.querySelector('.toggle_btn')
+ const toggleBtnIcon =document.querySelector('.toggle_btn i')
+ const dropDownMenu=document.querySelector('.dropdown_menu')
+
+toggleBtn.onclick = function(){
+    dropDownMenu.classList.toggle('open')
+    const isOpen = dropDownMenu.classList.contains('open')
+
+    toggleBtnIcon.classList = isOpen
+    ? 'fa-solid fa-xmark'
+    : 'fa-solid fa-bars'
+}
+    </script>
+<body>
+    
+</body>
+</html>
